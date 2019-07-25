@@ -11,10 +11,13 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -796,7 +799,7 @@
         </div><!-- /o-container -->
 
     </section><!-- /o-section -->
-
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
   </div><!-- /c-main-container -->
 
   <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
@@ -804,6 +807,26 @@
 
   <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+    /*Scroll to top when arrow up clicked BEGIN*/
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        if (height > 100) {
+            $('#back2Top').fadeIn();
+        } else {
+            $('#back2Top').fadeOut();
+        }
+    });
+    $(document).ready(function() {
+        $("#back2Top").click(function(event) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+    });
+    /*Scroll to top when arrow up clicked END*/
+    </script>
 
 </body>
 </html>
