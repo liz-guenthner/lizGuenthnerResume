@@ -658,6 +658,20 @@ img[height] {
   margin-bottom: 0;
 }
 
+a.portfolio-code-link {
+  color: #939393;
+}
+a.portfolio-code-link:hover {
+  color: #bf5700;
+}
+a.text-link {
+  color: #bf5700;
+}
+a.text-link:hover {
+  color: #bf5700;
+  filter: brightness(50%);
+}
+
 @media (min-width: 760px) {
   .o-content {
     padding-bottom: 1.75rem;
