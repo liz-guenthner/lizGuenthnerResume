@@ -660,17 +660,39 @@ img[height] {
 
 a.portfolio-code-link {
   color: #939393;
+  cursor:pointer;
 }
 a.portfolio-code-link:hover {
   color: #bf5700;
+  cursor:pointer;
 }
 a.text-link {
   color: #bf5700;
+  cursor:pointer;
 }
 a.text-link:hover {
   color: #bf5700;
   filter: brightness(50%);
+  cursor:pointer;
 }
+#anchor-links-header {
+  text-align:center;
+  margin-bottom: 20px;
+}
+@media (min-width: 1023px) {
+  #anchor-links-header {
+    text-align:left;
+  }
+}
+
+#anchor-links-header a{
+  color: #939393;
+  margin-right:10px;
+}
+#anchor-links-header a:hover{
+  color: #bf5700;
+}
+
 
 @media (min-width: 760px) {
   .o-content {
