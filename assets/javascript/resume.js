@@ -12,7 +12,7 @@
       // target element id
       var id = $(this).attr('href');
       // target element
-      var $id = $(id);
+      var $id = $('id');
       if ($id.length === 0) {
           return;
       }
